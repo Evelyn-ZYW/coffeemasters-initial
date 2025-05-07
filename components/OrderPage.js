@@ -61,8 +61,8 @@ export class OrderPage extends HTMLElement {
             </li>                
         `;
     }
-
-    this.setFormBindings(this.root.querySelector("form"));
+    const form = this.root.querySelector("form");
+    if (form) this.setFormBindings(form);
   }
 
   setFormBindings(form) {

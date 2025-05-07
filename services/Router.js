@@ -42,6 +42,9 @@ const Router = {
       cache.appendChild(pageElement);
       window.scrollX = 0;
       window.scrollY = 0;
+    } else {
+      // 404
+      document.querySelector('main').innerHTML = 'Oops, the requested page is not found!'
     }
   },
 };
